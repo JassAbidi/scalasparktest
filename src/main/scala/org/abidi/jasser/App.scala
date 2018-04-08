@@ -14,5 +14,5 @@ object App {
     val df = (1 to 100).toDF()
       df.show
   }
-  println( "Hello World!" )
+
 }
