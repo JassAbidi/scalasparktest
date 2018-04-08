@@ -11,8 +11,9 @@ object App {
     // declare sparksession
     val spark = SparkSession.builder().appName("test").master("local[2]").getOrCreate()
     import spark.implicits._
-    val df = (1 to 100).toDF()
-      df.show
+    val df1 = (1 to 100).toDF("id")
+    val df2 = (10 to 50).toDF("id")
+    df1.filter($"id" < 50 ).show
   }
 
 }
