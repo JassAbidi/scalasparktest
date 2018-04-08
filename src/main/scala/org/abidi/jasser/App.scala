@@ -1,7 +1,7 @@
 package org.abidi.jasser
 
 /**
- * Hello world!
+ * scala spark maven project
  *
  */
 
