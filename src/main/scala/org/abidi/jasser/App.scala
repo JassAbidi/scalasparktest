@@ -14,6 +14,7 @@ object App {
     val df1 = (1 to 100).toDF("id")
     val df2 = (10 to 50).toDF("id")
     df1.filter($"id" < 50 ).show
+    df1.filter($"id" > 50 ).show
   }
 
 }
